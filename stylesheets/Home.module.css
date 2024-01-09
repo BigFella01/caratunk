@@ -1,0 +1,31 @@
+.main {
+  background-color: #E9E9DF;
+}
+.main img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.main h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.main .about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.main .about > * {
+  color: #002138;
+}
+.main .about span {
+  color: #0C7100;
+}
+.main .infoPiece {
+  display: flex;
+  gap: 1rem;
+}
+
+/*# sourceMappingURL=Home.module.css.map */
