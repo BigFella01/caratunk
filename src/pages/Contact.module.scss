@@ -1,0 +1,24 @@
+@use '../globalthemes/colors';
+
+.main {
+  text-align: center;
+  padding: 2rem;
+  color: colors.$color-navy;
+}
+
+span {
+    color: colors.$color-green;
+}
+
+.map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}

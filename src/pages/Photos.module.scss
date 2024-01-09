@@ -1,0 +1,15 @@
+@use '../globalthemes/colors';
+
+
+.title {
+    text-align: center;
+    color: colors.$color-navy;
+    text-transform: uppercase;
+}
+
+.photoContainer > * {
+    max-width: 100%;
+    object-fit: cover;
+
+    padding: 2rem;
+}

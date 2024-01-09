@@ -1,0 +1,32 @@
+@use '../globalthemes/colors';
+
+.main {
+    background-color: colors.$color-cream;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+
+    h2 {
+        text-transform: uppercase;
+        color: colors.$color-navy;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    p {
+        color: colors.$color-navy
+    }
+
+    .location {
+        font-weight: bolder;
+    }
+
+    span {
+        color: colors.$color-green;
+    }
+}
+

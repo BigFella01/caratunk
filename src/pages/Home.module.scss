@@ -1,0 +1,54 @@
+@use '../globalthemes/colors';
+
+.main {
+  background-color: colors.$color-cream;
+
+  img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .imgRotated {
+    transform: rotate(90deg);
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 1rem;
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+  }
+
+  .about > * {
+    color: colors.$color-navy;
+  }
+
+  .about span {
+    color: colors.$color-green;
+  }
+
+  .infoPiece {
+    display: flex;
+    padding: 1rem;
+    border-top: 1px solid #c6c6c6;
+  }
+
+  .infoPiece > * {
+    width: 100%;
+  }
+
+  .infoPiece h4 {
+    text-transform: uppercase;
+    color: colors.$color-navy;
+  }
+}

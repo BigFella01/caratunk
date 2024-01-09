@@ -1,0 +1,27 @@
+@use '../globalthemes/colors';
+
+.footer {
+    text-align: center;
+    color: colors.$color-navy;
+    background-color: colors.$color-cream;
+    border-top: 1px solid #c6c6c6;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+        color: colors.$color-green;
+    }
+
+    .icons {
+        display: flex;
+        gap: 0.5rem;
+    }
+    
+    .img {
+        width: 40px;
+    }
+}
+
