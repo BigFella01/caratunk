@@ -4,6 +4,6 @@ import eslint from 'vite-plugin-eslint'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/caratunk/",
-  plugins: [react(), eslint()],
+  base: '/caratunk',
+  plugins: [react(), eslint()]
 })
