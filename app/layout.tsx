@@ -11,6 +11,7 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://caratunkcontractors.com"),
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
@@ -26,6 +27,23 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
   },
   manifest: "/site.webmanifest",
+
+  openGraph: {
+    title: siteConfig.name,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: "/bearclaw.webp",
+        width: 1200,
+        height: 630,
+        alt: `${siteConfig.name} Preview Image`,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -35,7 +53,9 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head />
+      <head>
+        <link rel="canonical" href="https://caratunkcontractors.com" />
+      </head>
       <body
         className={clsx(
           "min-h-screen font-sans antialiased",
@@ -43,16 +63,21 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-          <div className="relative flex flex-col h-screen">
-            <Navbar />
+          <div className="relative flex flex-col min-h-screen">
+            <header>
+              <Navbar />
+            </header>
+
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
               {children}
             </main>
-            <Footer />
+
+            <footer>
+              <Footer />
+            </footer>
           </div>
         </Providers>
       </body>
     </html>
   );
 }
-

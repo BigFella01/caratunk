@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://caratunkcontractors.com
+
+# Sitemaps
+Sitemap: https://caratunkcontractors.com/sitemap.xml
