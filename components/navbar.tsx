@@ -40,7 +40,7 @@ export const Navbar = () => {
             href="/"
             onClick={handleLinkClick}
           >
-            <img className="w-[125px]" src="logo.png"></img>
+            <img alt="logo" className="w-[125px]" src="logo.png"></img>
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
