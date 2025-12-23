@@ -5,6 +5,7 @@ const foundationExcavationImgs = [
   { src: "foundation-excavation/IMG_1973.jpg", alt: "Excavation 2" },
   { src: "foundation-excavation/IMG_1977.jpg", alt: "Excavation 3" },
   { src: "foundation-excavation/IMG_1979.jpg", alt: "Excavation 4" },
+  { src: "foundation-excavation/image6.jpeg", alt: "Excavation 5" },
 ];
 
 const residentialAdditionImgs = [
@@ -40,6 +41,14 @@ const stonePipeSeptic2Imgs = [
   { src: "stone-pipe-septic_new-market/IMG_1945.jpg", alt: "Gallery 4" },
 ];
 
+const septicPumpInstallation = [
+  { src: "septic-pump-installation/image0.jpeg", alt: "Gallery 1" },
+];
+
+const yardExpansion = [
+  { src: "septic-pump-installation/image0.jpeg", alt: "Gallery 1" },
+];
+
 export default function GalleryPage() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-start bg-background px-4 py-20 text-text">
@@ -72,10 +81,9 @@ export default function GalleryPage() {
       />
 
       {/* Stone Pipe Septic 2 */}
-      <GallerySection
-        title="Stone Pipe Septic 2"
-        images={stonePipeSeptic2Imgs}
-      />
+      <GallerySection title="Septic Pump 1" images={septicPumpInstallation} />
+
+      <GallerySection title="Yard Expansion" images={yardExpansion} />
     </section>
   );
 }
