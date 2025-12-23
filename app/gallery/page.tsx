@@ -43,11 +43,8 @@ const stonePipeSeptic2Imgs = [
 
 const septicPumpInstallation = [
   { src: "septic-pump-installation/image0.jpeg", alt: "Gallery 1" },
-];
+]
 
-const yardExpansion = [
-  { src: "septic-pump-installation/image0.jpeg", alt: "Gallery 1" },
-];
 
 export default function GalleryPage() {
   return (
@@ -81,9 +78,10 @@ export default function GalleryPage() {
       />
 
       {/* Stone Pipe Septic 2 */}
-      <GallerySection title="Septic Pump 1" images={septicPumpInstallation} />
-
-      <GallerySection title="Yard Expansion" images={yardExpansion} />
+      <GallerySection
+        title="Stone Pipe Septic 2"
+        images={stonePipeSeptic2Imgs}
+      />
     </section>
   );
 }
