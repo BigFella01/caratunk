@@ -1,11 +1,13 @@
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
 export const Footer = () => {
   return (
     <footer className="border-t border-default dark:border-default">
       <div className="container mx-auto max-w-7xl flex-grow py-6 px-6 flex items-center justify-between">
-        <span className="text-sm">© {new Date().getFullYear()} Caratunk Contractors</span>
+        <span className="text-sm">
+          © {new Date().getFullYear()} Caratunk Contractors
+        </span>
         <div className="flex gap-4">
           <a
             href="https://instagram.com/caratunk_contractors?igsh=Ym9wbHAzY245NG1w"
@@ -24,6 +26,15 @@ export const Footer = () => {
             className="text-xl hover:text-blue-600 transition-colors"
           >
             <FaFacebook />
+          </a>
+          <a
+            href="https://www.youtube.com/@CARATUNKCONTRACTORS"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+            className="text-xl hover:text-red-600 transition-colors"
+          >
+            <FaYoutube />
           </a>
         </div>
       </div>
