@@ -1,6 +1,6 @@
 "use client";
 
-import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 
 export default function ContactSection() {
   return (
@@ -38,6 +38,19 @@ export default function ContactSection() {
               className="hover:underline"
             >
               Caratunk Contractors on Facebook
+            </a>
+          </li>
+
+          {/* Facebook */}
+          <li className="flex items-center justify-center gap-3">
+            <FaYoutube className="text-2xl text-red-600" />
+            <a
+              href="https://www.youtube.com/@CARATUNKCONTRACTORS"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              Caratunk Contractors on YouTube
             </a>
           </li>
 

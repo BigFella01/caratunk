@@ -120,6 +120,29 @@ export default function Home() {
             </div>
           </div>
 
+          {/* YouTube component here */}
+          {/* YouTube component */}
+          <div className="mt-16">
+            <h3 className="text-2xl sm:text-3xl font-semibold mb-6 text-center">
+              Septic Design Explanation
+            </h3>
+            <div className="max-w-4xl mx-auto">
+              <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg">
+                <iframe
+                  src="https://www.youtube.com/embed/tkZp98bx0Dw"
+                  title="Septic Design Explanation - Caratunk Contractors"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                />
+              </div>
+            </div>
+            <p className="text-center mt-4 text-muted-foreground">
+              Learn how we approach septic system design for New Hampshire
+              properties.
+            </p>
+          </div>
+
           <div className="text-center mt-12">
             <a
               href="/services"
